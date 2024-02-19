@@ -44,7 +44,19 @@ ol {
 
 }
 
+@media (min-width: 992px) {
+    #app {
+        padding: 20px 0;
+    }
+    .container {
+       max-width: 1300px;
+       margin: 0 auto;
+    }
+    .app-sidebar {
+        min-width: 200px;
+    }
 
+}
 
 /*DEBUG*/
 
@@ -59,6 +71,7 @@ ol {
 
 .debug .app-sidebar {
 	background-color: rgb(255, 50, 152);
+    
 }
 
 .debug .app-main {
