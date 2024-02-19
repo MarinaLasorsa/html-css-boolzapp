@@ -1,4 +1,10 @@
 
+:root {
+	--dark-grey: #848B8D;
+    --light-grey:#CACBCD;
+    --grey: #B1B1B1;
+}
+
 /*RESET*/
 
 * {
@@ -17,6 +23,10 @@ ol {
 	list-style: none;
 }
 
+body {
+	font-family: "Lato", sans-serif;
+}
+
 /*LAYOUT*/
 
 #app {
@@ -31,6 +41,43 @@ ol {
 .app-sidebar {
 	display: none;
 }
+
+.row {
+	display: flex;
+}
+
+/*TOP BAR*/
+
+
+
+.main-header {
+	background-color: #EAEAEA;
+}
+
+.main-header .row {
+	align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.avatar {
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*UTILITY*/
+
+.text-small {
+	font-size: 12px;
+}
+
+.font-dark-grey {
+	color: var(--dark-grey)
+}
+
+/*RESPONSIVE*/
 
 @media (min-width: 576px) {
     .app-sidebar {
