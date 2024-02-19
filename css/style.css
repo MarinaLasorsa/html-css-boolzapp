@@ -30,7 +30,8 @@ body {
 
 #app {
     height: 100vh;
-    background: linear-gradient();
+    background: linear-gradient(to bottom, 
+    #019688 20%, #D7DBD5 20% 100%);
 }
 
 .container {
