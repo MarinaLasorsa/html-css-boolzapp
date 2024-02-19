@@ -1,0 +1,67 @@
+
+/*RESET*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+menu,
+ul,
+ol {
+	list-style: none;
+}
+
+/*LAYOUT*/
+
+#app {
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+    height: 100%;
+}
+
+.app-sidebar {
+	display: none;
+}
+
+@media (min-width: 576px) {
+    .app-sidebar {
+        display: block;
+        min-width: 50px;
+    }
+
+    .app-main {
+        flex-grow: 1;
+    }
+
+}
+
+
+
+/*DEBUG*/
+
+.debug #app {
+	background-color: aquamarine;
+}
+
+.debug .container {
+	border: 1px solid black;
+    min-height: 300px;
+}
+
+.debug .app-sidebar {
+	background-color: rgb(255, 50, 152);
+}
+
+.debug .app-main {
+	background-color: rgb(148, 61, 255);
+    width: 100%;
+}
