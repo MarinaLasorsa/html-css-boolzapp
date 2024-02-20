@@ -90,6 +90,8 @@ body {
     object-fit: cover;
 }
 
+/*NOTIF BAR*/
+
 .side-notif {
     display: none;
     background-color: var(--blue);
@@ -106,6 +108,34 @@ body {
 .side-notif i {
     color: var(--blue);
     font-size: 18px;
+}
+
+/*SEARCH BAR*/
+
+.side-search {
+    display: none;
+    background-color: #FAFAFA;
+    padding: 5px;
+}
+
+.search-bar {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-left: none;
+    padding: 5px 10px;
+}
+
+.side-search .row {
+    align-items: center;
+}
+
+.side-search i {
+    color: var(--grey);
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid var(--light-grey);
+    border-right: none;
 }
 
 /*UTILITY*/
@@ -161,8 +191,11 @@ body {
 
     .side-notif {
         display: block;
-     }
+    }
 
+    .side-search {
+        display: block;
+    }
 }
 
 /*DEBUG*/
