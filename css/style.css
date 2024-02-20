@@ -76,7 +76,7 @@ body {
 .card {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .side-header {
@@ -119,7 +119,6 @@ body {
 }
 
 .search-bar {
-    display: inline-block;
     width: 100%;
     border: 1px solid var(--light-grey);
     border-left: none;
@@ -136,6 +135,26 @@ body {
     background-color: white;
     border: 1px solid var(--light-grey);
     border-right: none;
+}
+
+/*CONTACTS*/
+
+.side-contacts {
+    background-color: #FAFAFA;
+    overflow: auto;
+}
+
+.side-contacts p {
+    display: none;
+}
+
+.card-box {
+    background-color: white;
+    padding: 15px;
+    border-right: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+    display: flex;
+    justify-content: space-between;
 }
 
 /*UTILITY*/
@@ -165,7 +184,11 @@ body {
 
     .main-header ul {
         display: flex;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    .side-header .card, .side-contacts .card {
+        gap: 0;
     }
 
 }
@@ -186,7 +209,7 @@ body {
 
     .side-header ul {
        display: flex;
-       gap: 10px;
+       gap: 15px;
     }
 
     .side-notif {
@@ -195,6 +218,18 @@ body {
 
     .side-search {
         display: block;
+    }
+
+    .card-box {
+        margin-right: 7px;
+    }
+
+    .side-contacts p {
+        display: block;
+    }
+
+    .side-header .card, .side-contacts .card {
+        gap: 15px;
     }
 }
 
