@@ -141,6 +141,7 @@ body {
 
 .side-contacts {
     background-color: #FAFAFA;
+    flex-grow: 1;
     overflow: auto;
 }
 
@@ -179,7 +180,8 @@ body {
 
 @media (min-width: 768px) {
     .app-sidebar {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .main-header ul {
@@ -241,7 +243,6 @@ body {
 
 .debug .container {
     border: 1px solid black;
-    min-height: 300px;
 }
 
 .debug .app-sidebar {
