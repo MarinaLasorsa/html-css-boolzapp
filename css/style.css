@@ -2,6 +2,8 @@
     --dark-grey: #848B8D;
     --light-grey: #CACBCD;
     --grey: #B1B1B1;
+    --light-blue: #F3FBFF;
+    --blue: #8EDAFC;
 }
 
 /*RESET*/
@@ -41,6 +43,12 @@ body {
 
 .app-sidebar {
     display: none;
+    min-width: 50px;
+    flex-shrink: 0;
+}
+
+.app-main {
+    flex-grow: 1;
 }
 
 .row {
@@ -53,10 +61,10 @@ body {
     background-color: #EAEAEA;
 }
 
-.side-header .row,.main-header .row {
+.side-header .row,
+.main-header .row {
     align-items: center;
     padding: 10px 15px;
-    justify-content: space-between;
 }
 
 .side-header ul,.main-header ul {
@@ -65,7 +73,7 @@ body {
     font-size: 18px;
 }
 
-.contact {
+.card {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -75,11 +83,29 @@ body {
     border-right: 1px solid var(--grey);
 }
 
-.avatar {
+.button-round, .avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.side-notif {
+    display: none;
+    background-color: var(--blue);
+    padding: 10px 15px;
+}
+
+.button-round {
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-notif i {
+    color: var(--blue);
+    font-size: 18px;
 }
 
 /*UTILITY*/
@@ -92,20 +118,19 @@ body {
     color: var(--dark-grey)
 }
 
+.font-light-grey {
+    color: var(--light-grey)
+}
+
 .space-between {
     justify-content: space-between;
 }
 
 /*RESPONSIVE*/
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .app-sidebar {
         display: block;
-        min-width: 50px;
-    }
-
-    .app-main {
-        flex-grow: 1;
     }
 
     .main-header ul {
@@ -115,25 +140,28 @@ body {
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     #app {
         padding: 20px 0;
     }
 
     .container {
-        width: 100%;
-        max-width: 900px;
+        width: 80%;
         margin: 0 auto;
     }
 
     .app-sidebar {
-        min-width: 200px;
+        min-width: 350px;
     }
 
     .side-header ul {
        display: flex;
        gap: 10px;
     }
+
+    .side-notif {
+        display: block;
+     }
 
 }
 
