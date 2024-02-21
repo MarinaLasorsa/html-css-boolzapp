@@ -127,20 +127,23 @@ body {
 .input-bar {
     width: 100%;
     border: 1px solid var(--light-grey);
-    border-left: none;
-    padding: 5px 10px;
+    padding-left: 50px;
+	padding-right: 10px;
+    height: 30px;
 }
 
 .side-search .row {
     align-items: center;
+    position: relative;
 }
 
 .side-search i {
     color: var(--grey);
-    padding: 5px 10px;
-    background-color: white;
-    border: 1px solid var(--light-grey);
-    border-right: none;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+	pointer-events: none;
 }
 
 /*CONTACTS*/
@@ -162,6 +165,13 @@ body {
     border-bottom: 1px solid var(--light-grey);
     display: flex;
     justify-content: space-between;
+}
+
+/*MAIN CHAT*/
+
+.main-body {
+    background-image: url(../img/mine.jpg);
+    padding: 5px 15px;
 }
 
 /*MESSAGE BAR*/
